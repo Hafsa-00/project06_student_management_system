@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 class student {
     constructor(id, name, courseEnrolled, feesAmount) {
@@ -38,7 +39,7 @@ do {
                     type: 'list',
                     name: 'ans',
                     message: 'plaese enter a course',
-                    choices: ['IT', 'biology ', 'english']
+                    choices: ['IT', 'biology', 'english']
                 });
                 let coursefees = 9;
                 switch (course.ans) {
